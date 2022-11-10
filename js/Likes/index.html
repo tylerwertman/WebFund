@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <h1>Network</h1>
+            <button onclick="logIn(this)">Log In</button>
+        </nav>
+        <main>
+            <h2>Your Feed</h2>
+            <div class="cols">
+                <div class="left">
+                    <div class="user">
+                        <img src="user-circle.png" alt="user-circle" id="profilePic">
+                        <a href="#" onclick="addImage()"></a>
+                        <h4>James Doe</h4>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="post">
+                        <div class="postTop">
+                            <h3>User1</h3>
+                            <div class="likes">
+                                <p class="likeCounter"></p><span class="wordLike"></span>
+                                <button onclick="addLike(this)">Like</button>
+                            </div>
+                        </div>
+                        <div class="postBody">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iure nisi repellat corrupti sunt et!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="postTop">
+                            <h3>User2</h3>
+                            <div class="likes">
+                                <p class="likeCounter"></p><span class="wordLike"></span>
+                                <button onclick="addLike(this)">Like</button>
+                            </div>
+                        </div>
+                        <div class="postBody">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, consequuntur!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="postTop">
+                            <h3>User3</h3>
+                            <div class="likes">
+                                <p class="likeCounter"></p><span class="wordLike"></span>
+                                <button onclick="addLike(this)">Like</button>
+                            </div>
+                        </div>
+                        <div class="postBody">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita suscipit ipsum libero itaque! Ex sapiente magni, dolore harum temporibus excepturi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

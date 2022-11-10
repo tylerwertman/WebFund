@@ -1,0 +1,71 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+  /* Fixed width container class that will "auto-center" itself */
+.container {
+    width: 1270px;
+    margin: 0 auto;
+}
+.btn {
+    background-color: turquoise;
+    color: white;
+    border: 0px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 1.15em;
+}
+.row {
+    margin: 25px auto;
+    width: 1270px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.col {
+    background-color: seagreen;
+    padding: 10px;
+    height: 50px;
+    flex: 1;
+    display: flex;
+    align-items:center;
+}
+.nav {
+    margin: 0 auto;
+    background-color: grey;
+    color: white;
+    width: 1270px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li {
+    display: inline;
+    font-weight: bold;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.btn-2 {
+    background-color: turquoise;
+    color: white;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 2px 2px black
+}

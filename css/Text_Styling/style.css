@@ -1,0 +1,33 @@
+* {
+    font-family: cursive;
+    margin: 10px 5px;
+    /* outline: 1px solid red; */
+}
+h1 {
+    background-color: black;
+    color: white;
+    font-size: 48px;
+    padding: 10px;
+    padding-left: 20px;
+}
+#teal {
+    color:aqua;
+}
+h2 {
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    padding: 10px;
+}
+h3 {
+    background-color: skyblue;
+    color: darkblue;
+    font-size: 28px;
+    text-align: right;
+    font-weight: normal;
+    text-decoration: underline;
+    padding: 10px;
+}

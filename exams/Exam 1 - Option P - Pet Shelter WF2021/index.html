@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>1st Exam</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navTop">
+                <div class="navTopLeft">
+                    <img src="./assets/heart-light.png" alt="heart-light img">
+                    <h1>Pet Shelter</h1>
+                </div>
+                <div class="navTopRight">
+                    <ul>
+                        <li><a href="#">Find A Pet</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                    <button onclick="removeDonate(this)">Donate</button>
+                </div>
+            </div>
+            <div class="navBot">
+                <div class="navBotLeft">
+                    <p>I'm looking for a...</p>
+                    <div class="navBotLeftElement">
+                        <img src="./assets/paw-light.png" alt="paw-light img">
+                        <label for="pet"></label>
+                        <select name="pet" id="pet" onchange="selectPet(this.value)">
+                            <option value="Any Pet" selected="selected">Any Pet</option>
+                            <option value="Dog">Dog</option>
+                            <option value="Cat">Cat</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="navBotMid">
+                    <p>in or near...</p>
+                    <div class="navBotMidElement">
+                        <img src="./assets/pin-light.png" alt="pin-light.png img">
+                        <label for="pet"></label>
+                        <input type="search" placeholder="City or Zip Code">
+                    </div>
+                </div>
+                <button class="navBotRight"> Find my new Best Friend</button>
+            </div>
+        </nav>
+        <main>
+            <div class="entry cat" onmouseenter="hoverCard(this)" onmouseleave="hoverCard(this)">
+                <div class="entryLeft">
+                    <img src="./assets/pepper.jpg" alt="pepper img">
+                    <div class="entryText">
+                        <h2>Pepper</h2>
+                        <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+                    </div>
+                </div>
+                <div class="counter">
+                    <div class="counterSpec">
+                        <p class="num"></p><p class="wordPettings">&nbsp;</p>
+                    </div>
+                    <button onclick="(increment(this))">Pet Pepper</button>
+                </div>
+            </div>
+            <div class="entry dog" onmouseenter="hoverCard(this)" onmouseleave="hoverCard(this)">
+                <div class="entryLeft">
+                    <img src="./assets/bruce.jpg" alt="bruce img">
+                    <div class="entryText">
+                        <h2>Bruce</h2>
+                        <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                    </div>
+                </div>
+                <div class="counter">
+                    <div class="counterSpec">
+                        <p class="num"></p><p class="wordPettings">&nbsp;</p>
+                    </div>
+                    <button onclick="(increment(this))">Pet Bruce</button>
+                </div>
+            </div>
+            <div class="entry dog" onmouseenter="hoverCard(this)" onmouseleave="hoverCard(this)">
+                <div class="entryLeft">
+                    <img src="./assets/oscar.jpg" alt="oscar img">
+                    <div class="entryText">
+                        <h2>Oscar</h2>
+                        <p>Oscar is bright, energetic, and friendly. He is looking for a good home.</p>
+                    </div>
+                </div>
+                <div class="counter">
+                    <div class="counterSpec">
+                        <p class="num"></p><p class="wordPettings">&nbsp;</p>
+                    </div>
+                    <button onclick="(increment(this))">Pet Oscar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

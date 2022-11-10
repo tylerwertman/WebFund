@@ -1,0 +1,211 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* Page controller */
+.container {
+    width:800px;
+    margin:0 auto;
+    flex-direction: column;
+    /* background-color: darkolivegreen; */
+}
+/* Flexboxes */
+.container, nav, nav ul, .navLinks, main, .mainLeft, .mainRight, .mainRight1Head,
+.mainRight1Body, .mainRight1Body ul, .mainRight1Body li, .mainRight2Head,
+.mainRight2Body, .mainRight2Body ul, .mainRight2Body li {
+    display: flex;
+}
+/* URL constants */
+nav a, .mainRight1Head a, .mainRight2Head a, .mainLeft1Body a { 
+    text-decoration: none;
+    color: white;
+}
+/* UL constants */
+nav ul, .mainRight1Body ul, .mainRight2Body ul {
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+/* Image constants */
+img {
+    width: 40px;
+    border-radius: 100%;
+    background-color: white;
+}
+.a-d {
+    width: 20px;
+    height: 20px;
+}
+/* Border constants */
+.mainLeft1Body, .mainLeft2Body, .mainRight1Body, .mainRight2Body{
+    border: 2px solid black;
+    border-top: 0;
+}
+/* For javascript magic */
+.mainRight1, .mainRight2, .mainLeft1, .mainLeft2 {
+    display: none;
+}
+/* Popup */
+.popup {
+    width: 200px;
+    /* height: 50px; */
+    display: none;
+    background-color: seagreen;
+    border-radius: 25px;
+    padding: 20px;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    border: 1px solid black;
+    text-align: center;
+    color: lightgrey;
+    box-shadow: 2px 2px 2px black;
+}
+.popup button {
+    background-color: black;
+    color: lime;
+    padding: 3px 5px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+/* NAV */
+nav {
+    background-color: grey;
+    color: white;
+    padding: 15px 50px;
+    justify-content: space-between;
+}
+.navLinks button {
+    margin-left: 20px;
+}
+nav a {
+    font-size: 1.1rem;
+}
+nav button {
+    padding: 3px 8px;
+    color:white;
+    background-color: seagreen;
+    /* box-shadow: 2px 2px 2px black; */
+    border: 2px solid black;
+}
+/* MAIN */
+main {
+    /* background-color:cornflowerblue; */
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 87%;
+}
+.mainLeft, .mainRight {
+    /* background-color: limegreen; */
+    /* height: 200px; */
+    /* margin: 5px; */
+    /* padding: 20px 0px; */
+    width: 60%;
+    flex-direction: column;
+    /* align-items: start; */
+}
+.mainRight {
+    /* background-color: red; */
+    /* margin-left: 10px; */
+    width: 40%;
+    align-items: end;
+}
+.mainRight1, .mainRight2, .mainLeft1, .mainLeft2 {
+    /* background-color: green; */
+    /* height: 50px; */
+    width: 83%;
+    /* padding: 10px; */
+    margin-bottom: 20px;
+}
+.mainRight1Head, .mainRight2Head, .mainLeft2Head {
+    /* margin-bottom: 5px; */
+    padding: 10px 0px;
+    /* justify-content: center; */
+    background-color: darkslategrey;
+    /* border-bottom: 2px solid black; */
+}
+h4 {
+    color: white;
+}
+.mainRight1Head a, .mainRight2Head a {
+    margin: 10px;
+    background-color: grey;
+    border-radius: 45%;
+    padding: 2px 5px;
+}
+.mainRight1Body, .mainRight2Body{
+    padding: 10px;
+}
+.mainRight2Body {
+    padding: 10px 15px;
+}
+.mainRight1Body, .mainRight1Body ul, .mainRight2Body, .mainRight2Body ul {
+    flex-direction: column;
+    gap: 10px;
+}
+.mainRight1Body li {
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.mainRight1Body span {
+    width: 50%;
+}
+.mainRight2Body li {
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.mainRight2Head a {
+    padding: 5px 9px;
+    border-radius: 70%;
+}
+/* .mainRight2 { */
+    /* background-color: purple; */
+/* } */
+.mainLeft1, .mainLeft2 {
+    /* background-color: blue; */
+    margin-bottom: 20px;
+    /* height: 50px; */
+    width: 99%;
+}
+.mainLeft1Head {
+    background-color: seagreen;
+    height: 75px;
+}
+.mainLeft1Head img {
+    position: relative;
+    width: 100px;
+    left: 5%;
+    top: 30%;
+}
+.mainLeft1Body {
+    /* background-color: orange; */
+    /* height: 50%; */
+    padding: 50px 0px 20px 5%;
+}
+.mainLeft1Body img {
+    width: 10px;
+    /* margin: 10px 0px 10px 0px; */
+}
+.mainLeft1Body p, .mainLeft1Body h2 {
+    margin: 10px 0px 10px 0px;
+}
+.mainLeft1Body a {
+    color: dodgerblue;
+}
+/* .mainLeft2 { */
+    /* background-color: yellow; */
+    /* height: 50px; */
+/* } */
+.mainLeft2Head {
+    padding-left: 25px;
+}
+.mainLeft2Body {
+    padding: 25px;
+}
+h3 {
+    margin: 10px 0px;
+}

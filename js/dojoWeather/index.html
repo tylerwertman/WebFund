@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="headerText">
+            <h1 onclick="resetCity()">Dojo Weather</h1>
+            <ul>
+                <li onclick="cityAlert(this)"><h2>Burbank</h2></li>
+                <li onclick="cityAlert(this)"><h2>Chicago</h2></li>
+                <li onclick="cityAlert(this)"><h2>Dallas</h2></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="top">
+            <h2>San Jose</h2>
+            <div>
+                <span>show temperature in</span>
+                <select name="degrees" id="degrees" onchange="farCel()">
+                    <option value="cel">°C</option>
+                    <option value="far">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="days">
+                <h2>Today</h2>
+                <img src="./assets/some_rain.png" alt="some_rain img">
+                <p>some rain</p>
+                <span class = "temps red">24°</span><span class="temps blue">18°</span>
+            </div>
+            <div class="days">
+                <h2>Tomorrow</h2>
+                <img src="./assets/some_sun.png" alt="some_sun img">
+                <p>some sun</p>
+                <span class = "temps red">27°</span><span class="temps blue">19°</span>
+            </div>
+            <div class="days">
+                <h2>Friday</h2>
+                <img src="./assets/some_clouds.png" alt="some_clouds img">
+                <p>some clouds</p>
+                <span class = "temps red">21°</span><span class="temps blue">16°</span>
+            </div>
+            <div class="days">
+                <h2>Saturday</h2>
+                <img src="./assets/some_sun.png" alt="some_sun img">
+                <p>some sun</p>
+                <span class = "temps red">26°</span><span class="temps blue">21°</span>
+            </div>
+        </div>
+        <section>
+            <img src="./assets/cookie.png" alt="cookie img">
+            <div>
+                <h2>Stop! Cookie time</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ratione pariatur, quis doloribus fuga saepe minus ea 
+                    temporibus accusamus incidunt tenetur. Consequatur repellendus 
+                    magnam dicta neque? <a href="#">Read More...</a></p>
+            </div>
+            <button onclick="eatCookies(this)">I Accept</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+* {
+    margin: 0 auto;
+    padding: 0px;
+}
+.container {
+    width: 800px;
+    background-color: grey;
+    padding: 20px;
+}
+.top {
+    background-color: aqua;
+}
+.mid {
+    background-color: pink;
+}
+.bot {
+    background-color: white;
+}
+h1 , p{
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+img {
+    height: 150px;
+}
+.top, .mid, .bot {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+}
