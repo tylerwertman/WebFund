@@ -1,6 +1,11 @@
+// Plans: 
 // add topping count up to 4
 // add cheese count up to 2
+// Somehow balance the randomizer so the last option doesn't have greater odds.. Or fill out the arrays to 10 options.
+// Figure out how to have more than 10 options for toppings
 
+
+// Ingredients object
 var ingredients = {
     crustType : ["deep dish crust", "hand tossed crust", "thin crust", "stuffed crust", "cauliflower crust", "cardboard crust", "gluten free crust", "whole wheat crust"],
     sauceType : ["traditional sauce", "marinara sauce", "no sauce", "salsa", "chocolate syrup"],
@@ -8,16 +13,20 @@ var ingredients = {
     toppingsType : ["onions", "garlic", "anchovies", "pepperoni", "sausage", "chicken", "bacon", "bbq sauce", "hot sauce", "sun dried tomatos"]
 }
 
+// Phrase for output
 var bonAppetit = "Bon Appetit!";
 
+// Function
 function randomPizza(crustType, sauceType, cheeseType, toppingsType) {
-    var randomizer = {
+    var randomizer = { // RNGing a number to index crust, sauce, cheese, topping and output phrase
         crustIndex: Math.round(Math.random()*10),
         sauceIndex: Math.round(Math.random()*10),
         cheeseIndex: Math.round(Math.random()*10),
         toppingIndex: Math.round(Math.random()*10),
         bonAppetitIndex: Math.round(Math.random()*10)
     }
+// These if-statements will ensure that if our Type-arrays contain below 10 entries, we will not end up with an 'undefined' value.
+// With this method, our final array index technically has greater odd to be be selected
     if (randomizer.crustIndex > ingredients.crustType.length-1) {
         randomizer.crustIndex = ingredients.crustType.length-1;
     }
@@ -30,9 +39,11 @@ function randomPizza(crustType, sauceType, cheeseType, toppingsType) {
     if (randomizer.toppingIndex > ingredients.toppingsType.length-1) {
         randomizer.toppingIndex = ingredients.toppingsType.length-1;
     }
+// This if statement simply adds some more variety to the output 
     if (randomizer.bonAppetitIndex > 4) {
         bonAppetit = "Enjoy your meal!"
     }
+// This object is out final randomized pizza template to write to.
     var pizza = {}
     pizza.crustType = crustType[randomizer.crustIndex];
     pizza.sauceType = sauceType[randomizer.sauceIndex];
@@ -40,14 +51,15 @@ function randomPizza(crustType, sauceType, cheeseType, toppingsType) {
     pizza.toppingsType = toppingsType[randomizer.toppingIndex];
     return pizza;
 }
-
+// "Save" our function return to console log below
 var za3 = randomPizza(ingredients.crustType, 
 ingredients.sauceType, 
 ingredients.cheeseType, 
 ingredients.toppingsType);
 
-// console.log("Your random pizza consists of: ");
-// console.log(za3);
+// Console Log your order!
+
+console.log("Your random pizza consists of: " + za3);
 console.log(`Your random pizza has a ${za3.crustType}, slathered with ${za3.sauceType}, sprinkled with ${za3.cheeseType}, and topped with ${za3.toppingsType}! ${bonAppetit}`);
 
 
