@@ -1,6 +1,6 @@
 // Plans: 
-// add topping count up to 4
-// add cheese count up to 2
+// add topping count up to 4 per randomized pizza
+// add cheese count up to 2 per randomized pizza
 // Somehow balance the randomizer so the last option doesn't have greater odds.. Or fill out the arrays to 10 options.
 // Figure out how to have more than 10 options for toppings
 
@@ -59,7 +59,7 @@ ingredients.toppingsType);
 
 // Console Log your order!
 
-console.log("Your random pizza consists of: " + za3);
+console.log("Your random pizza consists of: " + za3); // Doesn't work for some reason
 console.log(`Your random pizza has a ${za3.crustType}, slathered with ${za3.sauceType}, sprinkled with ${za3.cheeseType}, and topped with ${za3.toppingsType}! ${bonAppetit}`);
 
 
