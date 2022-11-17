@@ -103,3 +103,12 @@ async function shinyToggle() {
         POTD.children[3].src = poke.sprites.back_shiny;
     }
 }
+// ? add search function
+// run when form submitted
+// get the user input and save to var
+// plug into api call
+// repeat populating img src
+
+async function searchPoke() {
+
+}
