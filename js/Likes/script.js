@@ -50,7 +50,7 @@ else if (element.innerHTML == "Sign Out") {
     // console.log(loggedIn);
     // return loggedIn;
 }
-console.log();
+// console.log();
 function addImage() {
     if (document.querySelector("h4").innerHTML == "Tyler") {
         document.getElementById("profilePic").src = "me.jpg";

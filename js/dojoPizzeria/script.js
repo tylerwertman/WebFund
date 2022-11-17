@@ -43,7 +43,7 @@ function randomPizza(crustType, sauceType, cheeseType, toppingsType) {
     if (randomizer.bonAppetitIndex > 4) {
         bonAppetit = "Enjoy your meal!"
     }
-// This object is out final randomized pizza template to write to.
+// This object is our final randomized pizza template to write to.
     var pizza = {}
     pizza.crustType = crustType[randomizer.crustIndex];
     pizza.sauceType = sauceType[randomizer.sauceIndex];
