@@ -30,9 +30,10 @@ function cityAlert(element) {
     // console.log(temp);
     // console.log(newCity);
 
-    // This doesn't work?
+    // This doesn't work? -> probably global vs local variable but I'm not gonna test that right now
     // activeCity = newCity;
     // newCity = temp;
+
     // This works..
     document.querySelectorAll("h2")[3].innerText = newCity;
     element.children[0].innerText = temp;
@@ -48,6 +49,7 @@ function cityAlert(element) {
             blue[i].innerText = sjBlue[i];
         }
     } // end of San Jose
+
     // ...but Burbank has a reverse drought...
     else if (document.querySelectorAll("h2")[3].innerText == "Burbank") {
         for (var i = 0; i<weatherImg.length; i++) {
@@ -58,6 +60,7 @@ function cityAlert(element) {
             blue[i].innerText = bbkBlue[i]+"°";
         }
     } // end of Burbank
+
     // ...and Chicago is now the Cloudy City (TM)...
     else if (document.querySelectorAll("h2")[3].innerText == "Chicago") {
         for (var i = 0; i<weatherImg.length; i++) {
@@ -68,6 +71,7 @@ function cityAlert(element) {
             blue[i].innerText = chiBlue[i]+"°";
         }
     } // end of Chicago
+    
     // ...and Dallas gets a heat wave...
     else {
         for (var i = 0; i<weatherImg.length; i++) {
