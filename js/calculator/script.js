@@ -1,8 +1,8 @@
 num1 = "0";
 num2 = "0";
 op = "";
-placeholder = "";
-placeholder2 = "";
+// placeholder = "";
+// placeholder2 = "";
 screen = document.querySelector("#display");
 
 function press(value){
@@ -11,7 +11,8 @@ function press(value){
     console.log("press begin: op is "+op);
     // console.log(result);
     
-    if (op != "+" && op != "-" && op != "/" && op != "*"){
+    // if (op != "+" && op != "-" && op != "/" && op != "*"){
+    if (op == ""){
         // placeholder+=value;
         num1+=value;
         screen.innerText = Number(num1);
@@ -61,13 +62,13 @@ function clr(value){
 }
 function calculate(value){
     if (op == "+"){
-        result = num1+num2;
+        result = Number(num1)+Number(num2);
     }else if (op == "-") {
-        result = num1-num2;
+        result = Number(num1)-Number(num2);
     }else if (op == "*") {
-        result = num1*num2;
+        result = Number(num1)*Number(num2);
     }else if (op == "/") {
-        result = num1/num2;
+        result = Number(num1)/Number(num2);
     }
     console.log("equals early: num1 is "+num1);
     console.log("equals early: num2 is "+num2);
@@ -76,7 +77,7 @@ function calculate(value){
     
     screen.innerText = result;
     num1=result;
-    num2="0";
+    // num2="0";
     op = "";
     console.log("equals late: num1 is "+num1);
     console.log("equals late: num2 is "+num2);
