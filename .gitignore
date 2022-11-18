@@ -1,7 +1,11 @@
-exams/
 *.zip
-webFun_html_indentation/
-css/Library/
-js_fund/
 .DS_Store
 ._*
+
+# exclude these folders
+webFun_html_indentation/
+js_fund/
+exams/
+
+# all root level files
+/*.*
