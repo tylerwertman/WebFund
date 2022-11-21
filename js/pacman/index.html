@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman Demo</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.row div {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+div.brick {
+    background-color:aqua;
+
+}
+div.coin {
+    background-image: url("coin.gif") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+div.empty {
+    
+}
+div.cherry {
+    background-image: url("cherry.png") ;
+    background-repeat: no-repeat;
+    /* background-position:top; */
+    background-size:contain;
+}
+#pacman {
+    background-image: url("pacman.gif") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: rotate(0deg);
+}
+#pacman2 {
+    background-image: url("pacman.gif") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: rotate(0deg);
+}
+#orange {
+    background-image: url("orange.gif") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+#score, #score2 {
+    color: white;
+    border: 1px solid white;
+    position: absolute;
+    top: 50px;
+    left: 550px;
+    padding: 8px;
+    width: 60px;
+    text-align: center;
+}
+#score2 {
+    top: 100px;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="world"></div>
+        <div id="pacman"></div>
+        <div id="pacman2"></div>
+        <div id="orange"></div>
+        <div id="score">Score 1: 0</div>
+        <div id="score2">Score 2: 0</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
