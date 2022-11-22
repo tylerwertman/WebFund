@@ -187,12 +187,12 @@ document.onkeydown = function(e){
     // console.log(e.key);
 
     // move player 1
-    if(e.key == "ArrowLeft" && world[pacman.row][pacman.col-1] != 0){
+    if(e.key == "ArrowLeft" && world[pacman.row][pacman.col-1] != 0 && pacman.col > 0){
         // console.log(e);
         pacman.col--;
         pacmanDirection.style.transform = "rotate(180deg)";
     }
-    else if(e.key == "ArrowRight" && world[pacman.row][pacman.col+1] != 0 && pacman.col < 9){
+    else if(e.key == "ArrowRight" && world[pacman.row][pacman.col+1] != 0){
         // console.log(e);
         pacman.col++;
         pacmanDirection.style.transform = "rotate(0deg)";
@@ -218,12 +218,12 @@ document.onkeydown = function(e){
         drawWorld();
     }
     // move player 2
-    if(e.key == "a" && world[pacman2.row][pacman2.col-1] != 0){
+    if(e.key == "a" && world[pacman2.row][pacman2.col-1] != 0 && pacman2.col > 0){
         // console.log(e);
         pacman2.col--;
         pacmanDirection2.style.transform = "rotate(180deg)";
     }
-    else if(e.key == "d" && world[pacman2.row][pacman2.col+1] != 0 && pacman2.col < 9){
+    else if(e.key == "d" && world[pacman2.row][pacman2.col+1] != 0){
         // console.log(e);
         pacman2.col++;
         pacmanDirection2.style.transform = "rotate(0deg)";
@@ -278,7 +278,7 @@ function newLife() {
         updateScoreboard();
     }else {
         pacman.row = 0;
-        pacman.col = 9;
+        pacman.col = 0;
         pacman.lives--
         if (pacman.score > pacman.topScore){
             pacman.topScore = pacman.score;
@@ -295,8 +295,8 @@ function newLife2() {
         drawPacman();
         updateScoreboard();
     }else {
-        pacman2.row = 9;
-        pacman2.col = 9;
+        pacman2.row = 14;
+        pacman2.col = 0;
         pacman2.lives--
         if (pacman2.score > pacman2.topScore){
             pacman2.topScore = pacman2.score;
