@@ -8,32 +8,42 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
 
     <style>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
 body {
     background-color: black;
     margin: 0;
+}
+#container {
+    display: flex;
+    gap: 50px;
 }
 
 .row div {
     padding: 0;
     margin: 0;
-    height: 50px;
-    width: 50px;
+    height: 20px;
+    width: 20px;
     display: inline-block;
 }
-div.brick {
+.brick {
     background-color:aqua;
 
 }
-div.coin {
+.coin {
     background-image: url("coin.gif") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
-div.empty {
+.empty {
     
 }
-div.cherry {
+.cherry {
     background-image: url("cherry.png") ;
     background-repeat: no-repeat;
     /* background-position:top; */
@@ -44,11 +54,11 @@ div.cherry {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 20px;
+    left: 20px;
     transform: rotate(0deg);
 }
 #pacman2 {
@@ -56,44 +66,79 @@ div.cherry {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 200px;
+    left: 20px;
     transform: rotate(0deg);
+    
 }
 #orange {
-    background-image: url("orange.gif") ;
+    background-image: url("orange.gif");
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#pink {
+    background-image: url("pink.gif");
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#teal {
+    background-image: url("teal.gif");
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#red {
+    background-image: url("red.gif");
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#orange, #pink, #teal, #red {
+    /* background-image: url("orange.gif"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
+    /* position: absolute;
+    top: 50px;
+    left: 50px; */
 }
-#score, #score2 {
+#player1, #player2 {
     color: white;
     border: 1px solid white;
-    position: absolute;
+    /* position: absolute;
     top: 50px;
-    left: 550px;
+    left: 550px; */
     padding: 8px;
-    width: 60px;
-    text-align: center;
+    width: 250px;
 }
-#score2 {
-    top: 100px;
+#player1 h4, #player2 h4 {
+    font-weight: bold;
+    text-align: center;
 }
     </style>
 </head>
 <body>
     <div id="container">
-        <div id="world"></div>
-        <div id="pacman"></div>
-        <div id="pacman2"></div>
-        <div id="orange"></div>
-        <div id="score">Score 1: 0</div>
-        <div id="score2">Score 2: 0</div>
+        <div class="game">
+            <div id="world"></div>
+            <div id="pacman"></div>
+            <div id="pacman2"></div>
+            <div id="orange"></div>
+            <div id="pink"></div>
+            <div id="teal"></div>
+            <div id="red"></div>
+        </div>
+        <div class="score">
+            <div id="player1"><h4>Player 1</h4><p>Score: 0</p><p>Lives: 3</p><p>Top Score: 0</p></div>
+            <div id="player2"><h4>Player 2</h4><p>Score: 0</p><p>Lives: 3</p><p>Top Score: 0</p></div>
+        </div>
     </div>
 
     <script src="script.js"></script>
