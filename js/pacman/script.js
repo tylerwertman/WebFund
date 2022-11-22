@@ -40,54 +40,70 @@ if (rngWorld == 0){
         [0,0,0,0,0,0,0,0,0,0]
     ];
 }else if (rngWorld == 3){
-    var world = [
-        [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,2,2,2,2,2,2,2,2,2,2,2,2,1,0],
-        [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    var world = [ 
+        [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        [0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0],
+        [0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0],
+        [0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0],
+        [0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0],
+        [0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0],
+        [0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0],
+        [0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0],
+        [0,1,1,1,1,1,1,0,0,1,1,1,1,0,0,1,1,1,1,0,0,1,1,1,1,1,1,0],
+        [0,0,0,0,0,0,1,0,0,0,0,0,2,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0],
+        [2,2,2,2,2,0,1,0,0,0,0,0,2,0,0,2,0,0,0,0,0,1,0,2,2,2,2,2],
+        [2,2,2,2,2,0,1,0,0,2,2,2,2,2,2,2,2,2,2,0,0,1,0,2,2,2,2,2],
+        [2,2,2,2,2,0,1,0,0,2,0,0,0,2,2,0,0,0,2,0,0,1,0,2,2,2,2,2],
+        [0,0,0,0,0,0,1,0,0,2,0,2,2,2,2,2,2,0,2,0,0,1,0,0,0,0,0,0],
+        [2,2,2,2,2,2,1,2,2,2,0,2,2,2,2,2,2,0,2,2,2,1,2,2,2,2,2,2],
+        [0,0,0,0,0,0,1,0,0,2,0,2,2,2,2,2,2,0,2,0,0,1,0,0,0,0,0,0],
+        [2,2,2,2,2,0,1,0,0,2,0,0,0,0,0,0,0,0,2,0,0,1,0,2,2,2,2,2],
+        [2,2,2,2,2,0,1,0,0,2,2,2,2,2,2,2,2,2,2,0,0,1,0,2,2,2,2,2],
+        [2,2,2,2,2,0,1,0,0,2,0,0,0,0,0,0,0,0,2,0,0,1,0,2,2,2,2,2],
+        [0,0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0],
+        [0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,0],
+        [0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0],
+        [0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1,0],
+        [0,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,0],
+        [0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0],
+        [0,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0,0,0],
+        [0,1,1,1,1,1,1,0,0,1,1,1,1,0,0,1,1,1,1,0,0,1,1,1,1,1,1,0],
+        [0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0],
+        [0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0],
+        [0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0],
+        [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     ];
 }
 
 var pacman = {
-    row: 1,
-    col: 1,
+    row: 23,
+    col: 14,
     lives: 3,
     score:0,
     topScore: 0
 };
 var pacman2 = {
-    row: 8,
-    col: 1,
+    row: 23,
+    col: 13,
     lives: 3,
     score: 0,
     topScore:0
 };
 var orange = {
-    row: 2,
-    col: 2,
+    row: 13,
+    col: 16,
 };
 var pink = {
-    row: 3,
-    col: 3,
+    row: 13,
+    col: 11,
 };
 var teal = {
-    row: 6,
-    col: 3,
+    row: 15,
+    col: 16,
 };
 var red = {
-    row: 7,
-    col: 2,
+    row: 15,
+    col: 11,
 };
 
 var player1 = document.querySelector("#player1");
@@ -148,7 +164,7 @@ function drawCherry() {
     // console.log(world);
     for (var row = 0; row<world.length; row++){
         for (let col = 0; col < world[row].length; col++) {
-            var rngCherry = Math.floor(Math.random()*15);
+            var rngCherry = Math.floor(Math.random()*30);
             var rngBanana = Math.floor(Math.random()*30);
             if (world[row][col] == 1){
                 if (rngCherry == 1){
@@ -255,6 +271,7 @@ document.onkeydown = function(e){
 // scatter ghosts and move pacman to test collisions
 // Check for player collision with ghosts
 setInterval(function(){
+    // console.log(orange.row, orange.col);
     if((pacman.row == orange.row && pacman.col == orange.col) || 
     (pacman.row == pink.row && pacman.col == pink.col) ||
     (pacman.row == teal.row && pacman.col == teal.col) ||
@@ -306,22 +323,36 @@ function newLife2() {
     }
 }
 
-// move orange
+// move orange but he won't make it out of the house
 setInterval(function(){
-    // console.log(`pacman row, col is ${pacman.row}, ${pacman.col}`);
-    // console.log(`orange row, col is ${orange.row}, ${orange.col}`);
-    if(pacman.lives > 0){
-        if(orange.row > pacman.row && 1 < orange.row < 8){
-            orange.row--;
-        }else if(orange.row < pacman.row && 1 < orange.row < 9){
-            orange.row++;
-        }
-        if(orange.col > pacman.col && 1 < orange.col < 9){
-            orange.col--;
-        }else if(orange.col < pacman.col && 1 < orange.col < 9){
-            orange.col++;
-        }
-    }
-    else{orange.col = 4; orange.row = 4;}
+// console.log(`pacman row, col is ${pacman.row}, ${pacman.col}`);
+// console.log(`orange row, col is ${orange.row}, ${orange.col}`);
+var rngOrange = Math.floor(Math.random()*4);
+console.log(rngOrange);
+if (rngOrange == 0 && world[orange.row-1][orange.col] != 0){
+    orange.row--;
+    // console.log("up");
+}else if(rngOrange == 1 && world[orange.row+1][orange.col] != 0){
+    orange.row++;
+    // console.log("down");
+}else if(rngOrange == 2 && world[orange.row][orange.col-1] != 0){
+    orange.col--;
+    // console.log("left");
+}else if(rngOrange == 2 && world[orange.row][orange.col+1] != 0){
+    orange.col++;
+    // console.log("right");
+}
+    // if(pacman.lives > 0){
+    //     if(orange.row > pacman.row && world[orange.row-1][orange.col] != 0){
+    //         orange.row--;
+    //     }else if(orange.row < pacman.row && world[orange.row+1][orange.col] != 0){
+    //         orange.row++;
+    //     }
+    //     if(orange.col > pacman.col && world[orange.row][orange.col-1] != 0){
+    //         orange.col--;
+    //     }else if(orange.col < pacman.col && world[orange.row][orange.col+1] != 0){
+    //         orange.col++;
+    //     }
+    // }
 drawGhosts();
 },1000)
